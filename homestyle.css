@@ -1,0 +1,38 @@
+body{
+    background-color: #222;
+}
+
+
+.loginform{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding-top:20px;
+    box-shadow: 0 0 9px 0 rgb(0, 0, 0);
+    width:600px;
+    height:400px;
+
+}
+
+.loginform label{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    background-color:#9e19e6;
+}
+
+.loginform input[type=password],.loginform input[type=text]{
+    width:310px;
+    height:50px;
+    border:1px solid #9e19e6;
+}
+
+
+.loginform input[type=submit]{
+    background-color:#9e19e6; 
+    border: 0px;
+    cursor:pointer;
+}
+.loginform input[type=submit]:hover{}
