@@ -3,21 +3,42 @@
   <head>
     <title>☆MFab☆</title>
     <link rel="stylesheet" href="homestyle.css">
+    <script src="https://kit.fontawesome.com/da7115a713.js" crossorigin="anonymous"></script>
+    <script src="homescript.js"></script>
   </head>
+   
   <body>
+
     <header class="header">
       <img src="">
 
     </header>
+
     <form class="loginform">
-      <label for="username" id="usernamelabel"></label>
+      <label for="username" id="usernamelabel">
+        <i id="label-icon" class="fa-solid fa-user fa-2xl"></i>
+      </label>
       <input type="text" placeholder="name" name="username" id="username">
-      <label for="code" id="codelabel"></label>
+      <label for="code" id="codelabel">
+        <i id="label-icon"class="fa-solid fa-fingerprint fa-2xl"></i>
+      </label>
       <input type="password" placeholder="code" name="code" id="code">
-      <input name="submit" type="submit" value="Login">
+      <button name="submit">Login<i id="login-icon" class="fa-solid fa-right-to-bracket fa-2xl"></i></button>
     </form>
 
-    <script> src="homescript.js"</script> 
+    <form class="color-picker-group">
+      <input type="color" id="color-picker" name="color">
+      <button id="color-picker-btn"type="button" onclick="changeColor()">Change color</button>
+      <i class="fa-solid fa-palette fa-2xl" id="color-icon" ></i>
+    </form>
+    
+    
+
+    <audio controls src="audio/Juice-WRLD-All-Girls-Are-The-Same-(HipHopKit.com).mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    
   </body>
   
 </html>

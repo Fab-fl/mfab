@@ -1,9 +1,23 @@
+:root{
+  --main-color: #222;
+  --dark-accent-color: rgb(26, 25, 25);;
+  --accent-color: rgb(255, 0, 221);
+  --text-color: rgb(182, 182, 182);
+}
+
 body{
-    background-color: #222;
+    background-color: var(--main-color);
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
+
+@font-face {
+        font-family: 'teko';
+        src: url(/fonts/Teko/Teko-Regular.ttf) format('woff2');
+}
+
+
 .header{
     width:100%;
     height:10%;
@@ -28,26 +42,98 @@ body{
     align-items:center;
     width:70px;
     height:70px;
-    background-color:#9e19e6;
+    background-color:var(--accent-color);
 }
+
 
 .loginform input[type=password],.loginform input[type=text]{
     margin-bottom: 10%;
     width:90%;
     height:70px;
-    border:1px solid #9e19e6;
+    border:1px solid var(--accent-color);
 }
 
 
-.loginform input[type=submit]{
-    background-color:#9e19e6; 
+.loginform button[name=submit]{
+    background-color:var(--accent-color); 
     border: 0px;
     cursor:pointer;
-    color: white;
-    font-size: 90%;
+    color: var(--text-color);
+    font-size: 100%;
+    font-family: 'teko';
+    text-shadow: 0 0 12px#222;
     width:70%;
     height:70px;
 }
-.loginform input[type=submit]:hover{
-    box-shadow: 0 0 12px 0 #8922c0;
+.loginform button[name=submit]:hover{
+    box-shadow: 0 0 10px 0 var(--accent-color);
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+audio {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 40%; 
+    background-color: #222; 
+    border-radius: 5px; 
+    justify-content: center;
+  }
+  audio::-webkit-media-controls-panel{
+    color: var(--accent-color);
+  }
+  audio::-webkit-media-controls-play-button {
+    background-image: url(images/999.webp); 
+    width: 100%; 
+    height: 60%;
+  }
+
+  #color-picker{
+    background-color: #222;
+    border: 0px;
+  }
+  #color-picker-btn{
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0);
+    color: var(--text-color);
+    background-color: var(--main-color);
+    width:40%;
+    border: 0px;
+    border-radius: 50px;
+    font-family: 'teko';
+    text-shadow: 0 0 12px#222;
+  }
+
+  #color-picker-btn:hover{
+    box-shadow: 0 0 9px 0 var(--accent-color);
+  }
+
+  .color-picker-group{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    height:70%;
+    padding:5%;
+  }
+
+  #color-icon{
+    color:var(--dark-accent-color);
+    text-shadow: 0 0 7px var(--accent-color);
+  }
+
+  #login-icon{
+    color: var(--dark-accent-color);
+  }
+
+  #label-icon{
+    color: var(--dark-accent-color);
+  }
+  
+  
