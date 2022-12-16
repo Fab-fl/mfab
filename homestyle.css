@@ -19,17 +19,22 @@ body{
 
 
 .header{
-    width:100%;
+    width:60%;
     height:10%;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .header img{
-    width:100%;
-    height:10%;
+  width:100%;
+  height:10%;
+  border-radius: 6px;
 }
+
 
 .loginform{
     padding-top: 4%;
     display: flex;
+    background-color:;
     flex-wrap: wrap;
     justify-content:center;
     box-shadow: 0 0 9px 0 rgb(0, 0, 0);
@@ -50,7 +55,11 @@ body{
     margin-bottom: 10%;
     width:90%;
     height:70px;
+<<<<<<< HEAD
     border:1px solid var(--accent-color);
+=======
+    border:1px solid #222;
+>>>>>>> 93500d9e0c03476ccdc5aba571cc104331ba7dd0
 }
 
 
@@ -65,6 +74,7 @@ body{
     width:70%;
     height:70px;
 }
+<<<<<<< HEAD
 .loginform button[name=submit]:hover{
     box-shadow: 0 0 10px 0 var(--accent-color);
 }
@@ -82,12 +92,8 @@ audio {
     margin-left: 10%;
     margin-right: 10%;
     width: 40%; 
-    background-color: #222; 
     border-radius: 5px; 
     justify-content: center;
-  }
-  audio::-webkit-media-controls-panel{
-    color: var(--accent-color);
   }
   audio::-webkit-media-controls-play-button {
     background-image: url(images/999.webp); 
@@ -120,7 +126,7 @@ audio {
     flex-wrap: wrap;
     width:70%;
     height:70%;
-    padding:5%;
+    padding:4%;
   }
 
   #color-icon{
@@ -137,3 +143,9 @@ audio {
   }
   
   
+=======
+.loginform input[type=submit]:hover{
+    box-shadow: 0 0 12px 0 #8922c0;
+
+}
+>>>>>>> 93500d9e0c03476ccdc5aba571cc104331ba7dd0
