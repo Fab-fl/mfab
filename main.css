@@ -1,0 +1,13 @@
+:root{
+    --main-color: #222;
+    --dark-accent-color: rgb(26, 25, 25);;
+    --accent-color: rgb(255, 0, 221);
+    --text-color: rgb(182, 182, 182);
+  }
+  
+  body{
+      background-color: var(--main-color);
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap; 
+  }

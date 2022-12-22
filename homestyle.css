@@ -1,5 +1,8 @@
 :root{
   --main-color: #222;
+  --background-color-brighter:#2f3136;
+  --background-color-bright:#3f4044;
+  --background-color-darker:#242425;
   --dark-accent-color: rgb(26, 25, 25);;
   --accent-color: rgb(255, 0, 221);
   --text-color: rgb(182, 182, 182);
@@ -14,69 +17,83 @@ body{
 
 @font-face {
         font-family: 'teko';
-        src: url(/fonts/Teko/Teko-Regular.ttf) format('woff2');
+        src: url(fonts/Teko/Teko-Regular.ttf) format('woff2');
 }
-
 
 .header{
     width:60%;
     height:10%;
     justify-content: center;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
 .header img{
   width:100%;
   height:10%;
   border-radius: 6px;
+  position: relative;
+  z-index: 1;
 }
 
 
 .loginform{
-    padding-top: 4%;
+  border-radius: 5px;
+    padding-top: 3%;
     display: flex;
-    background-color:;
+    background-color: var(--background-color-darker);
     flex-wrap: wrap;
     justify-content:center;
     box-shadow: 0 0 9px 0 rgb(0, 0, 0);
     width:50%;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 3%;
 }
 
 .loginform label{
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-right: 5px;
     width:70px;
     height:70px;
     background-color:var(--accent-color);
+    border-radius: 5px;
 }
 
 
-.loginform input[type=password],.loginform input[type=text]{
+.loginform input[type=password],.loginform input[type=text],#code{
     margin-bottom: 10%;
     width:90%;
     height:70px;
-<<<<<<< HEAD
-    border:1px solid var(--accent-color);
-=======
-    border:1px solid #222;
->>>>>>> 93500d9e0c03476ccdc5aba571cc104331ba7dd0
+    border: 0px;
+    border-radius: 5px;
 }
 
 
 .loginform button[name=submit]{
-    background-color:var(--accent-color); 
-    border: 0px;
+  background-color: rgba(34, 34, 34, 0);
     cursor:pointer;
-    color: var(--text-color);
     font-size: 100%;
-    font-family: 'teko';
-    text-shadow: 0 0 12px#222;
-    width:70%;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: initial;
+    width: 55%;
     height:70px;
+    border:0px;
+    overflow: hidden;
+    border-radius: 980px;
+    border: 1px solid var(--accent-color);
+    color:var(--accent-color);
+    font-weight: 500;
+    position: relative;
 }
-<<<<<<< HEAD
+
+
 .loginform button[name=submit]:hover{
     box-shadow: 0 0 10px 0 var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+
 }
 
 @keyframes rotate {
@@ -134,18 +151,28 @@ audio {
     text-shadow: 0 0 7px var(--accent-color);
   }
 
-  #login-icon{
-    color: var(--dark-accent-color);
-  }
-
   #label-icon{
     color: var(--dark-accent-color);
   }
-  
-  
-=======
-.loginform input[type=submit]:hover{
-    box-shadow: 0 0 12px 0 #8922c0;
 
-}
->>>>>>> 93500d9e0c03476ccdc5aba571cc104331ba7dd0
+  #toggle-code-button{
+    color: var(--accent-color);
+    background-color: var(--background-color-bright);
+    width:70px;
+    height:70px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    border:0px;
+    margin-right: 15px;
+  }
+
+
+
+  @media only screen and (max-width:700px){
+    .loginform{
+      width:90%;
+    }
+
+
+  }

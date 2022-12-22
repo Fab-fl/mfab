@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>☆MFab☆</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="stylesheet" href="homestyle.css">
     <script src="https://kit.fontawesome.com/da7115a713.js" crossorigin="anonymous"></script>
     <script src="homescript.js"></script>
@@ -13,7 +14,7 @@
       <img src="images/header.jpeg">
     </header>
 
-    <form class="loginform">
+    <div class="loginform">
       <label for="username" id="usernamelabel">
         <i id="label-icon" class="fa-solid fa-user fa-2xl"></i>
       </label>
@@ -22,16 +23,16 @@
         <i id="label-icon"class="fa-solid fa-fingerprint fa-2xl"></i>
       </label>
       <input type="password" placeholder="code" name="code" id="code">
-      <button name="submit">Login<i id="login-icon" class="fa-solid fa-right-to-bracket fa-2xl"></i></button>
-    </form>
+      <button id="toggle-code-button"><i class="fa-solid fa-eye-slash"></i></button>
+      <button name="submit">Login</i></button>
+    </div>
+
 
     <form class="color-picker-group">
       <input type="color" id="color-picker" name="color">
       <button id="color-picker-btn"type="button" onclick="changeColor()">Change color</button>
       <i class="fa-solid fa-palette fa-2xl" id="color-icon" ></i>
     </form>
-    
-    
 
     <audio controls src="audio/Juice-WRLD-All-Girls-Are-The-Same-(HipHopKit.com).mp3">
       Your browser does not support the audio element.
