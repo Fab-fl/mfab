@@ -4,7 +4,7 @@
   --background-color-bright:#3f4044;
   --background-color-darker:#242425;
   --dark-accent-color: rgb(26, 25, 25);;
-  --accent-color: rgb(255, 0, 221);
+  --accent-color: #ff00dd;
   --text-color: rgb(182, 182, 182);
 }
 
@@ -105,7 +105,7 @@ body{
     }
   }
 
-audio {
+  audio {
     margin-left: 10%;
     margin-right: 10%;
     width: 40%; 
@@ -120,17 +120,10 @@ audio {
 
   #color-picker{
     background-color: #222;
+    border-radius: 1980px;
     border: 0px;
-  }
-  #color-picker-btn{
-    box-shadow: 0 0 4px 0 rgb(0, 0, 0);
-    color: var(--text-color);
-    background-color: var(--main-color);
     width:40%;
-    border: 0px;
-    border-radius: 50px;
-    font-family: 'teko';
-    text-shadow: 0 0 12px#222;
+    value: var(--accent-color);
   }
 
   #color-picker-btn:hover{
@@ -173,6 +166,14 @@ audio {
     .loginform{
       width:90%;
     }
+    audio {
+      width: 90%; 
+      height: 40px;
+    }
+    .header{
+      width:100%;
+      height:70%;
+  }
 
 
   }

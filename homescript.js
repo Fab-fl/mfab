@@ -1,13 +1,26 @@
-function changeColor() {
-    var color = document.getElementById('color-picker').value;
-    document.documentElement.style.setProperty('--accent-color', color);
+function runninforever() { 
+  var color = document.getElementById('color-picker').value;
+  document.documentElement.style.setProperty('--accent-color', color);  
+}
+
+
+function login(){
+  if(document.getElementById('code').value == "FL79J48"){
+  window.location.href = "main.html";
   }
+}
 
 
 document. addEventListener("DOMContentLoaded",function(){
+
   const togglecodeButton = document.getElementById('toggle-code-button');
   const codefield = document.getElementById('code');
   const icon = togglecodeButton.querySelector('i');
+  var color = document.getElementById('color-picker').value;
+
+  runninforever();
+  setInterval(runninforever, 100);
+
 
   togglecodeButton.addEventListener('click', function() {
     if (codefield.type === 'password') {
@@ -19,18 +32,15 @@ document. addEventListener("DOMContentLoaded",function(){
       icon.classList.remove('fa-eye');
       icon.classList.add('fa-eye-slash');
     }
+
+  
   });
-
-
-
 })
 
-var username = document.getElementById('username').value;
-  var code = document.getElementById('code').value;
 
-  if(code = "FL79J48"){
-    window.location.href = "main.html";
-  }
+
+
+  
 
 
 
