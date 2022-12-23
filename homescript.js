@@ -7,6 +7,8 @@ function runninforever() {
 function login(){
   if(document.getElementById('code').value == "FL79J48"){
   window.location.href = "main.html";
+  }else{
+    alert("Wrong Code")
   }
 }
 
