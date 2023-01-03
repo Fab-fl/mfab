@@ -5,9 +5,9 @@
     --text-color: rgb(182, 182, 182);
   }
   
-  body{
-      background-color: var(--main-color);
-      justify-content: center;
-      display: flex;
-      flex-wrap: wrap; 
-  }
+body{
+    background-color: #23242a;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+}
