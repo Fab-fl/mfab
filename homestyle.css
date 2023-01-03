@@ -154,6 +154,7 @@ body{
     z-index: 20;
     position: absolute;
     border-radius: 8px;
+    cursor: pointer;
   }
   #color-picker-btn{
     cursor:pointer;
@@ -178,32 +179,23 @@ body{
     inset: 2px;
     border-radius: 8px;
     z-index: 10;
+    color:var(--accent-color);
+    text-align: center;
+    justify-content: center;
+    line-height:100px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   }
 
   #color-picker-btn:before{
-    top:-50%;
-    right:50%;
-    transform-origin: bottom right ;
+    top:-250%;
     content:'';
     position: absolute;
-    width: 100%;
-    height:100%;
-    background: linear-gradient(0deg, transparent,var(--accent-color),var(--accent-color));
-    animation: rotatingcolorstrip 6s linear infinite;
+    width: 40px;
+    height:600%;
+    background: var(--accent-color);
+    animation: rotatingcolorstrip 10s linear infinite;
   }
 
-  #color-picker-btn::after{
-    top:-50%;
-    right:50%;
-    transform-origin: bottom right ;
-    content:'';
-    position: absolute;
-    width: 100%;
-    height:100%;
-    background: linear-gradient(0deg, transparent,var(--accent-color),var(--accent-color));
-    animation: rotatingcolorstrip 6s linear infinite;
-    animation-delay: 3s;
-  }
 
   @keyframes rotatingcolorstrip{
     0%{
@@ -234,6 +226,7 @@ body{
 
   #toggle-code-button{
     color: var(--accent-color);
+    cursor: pointer;
     background-color: var(--background-color-bright);
     width:70px;
     height:70px;

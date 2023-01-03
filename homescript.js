@@ -1,6 +1,7 @@
 function runninforever() { 
   var color = document.getElementById('color-picker').value;
   document.documentElement.style.setProperty('--accent-color', color);  
+
 }
 
 
@@ -22,6 +23,8 @@ document. addEventListener("DOMContentLoaded",function(){
 
   runninforever();
   setInterval(runninforever, 100);
+
+
 
 
   togglecodeButton.addEventListener('click', function() {
