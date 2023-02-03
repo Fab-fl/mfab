@@ -42,6 +42,31 @@ document. addEventListener("DOMContentLoaded",function(){
   });
 })
 
+firebase.initializeApp({
+  apiKey: "API_KEY",
+  authDomain: "AUTH_DOMAIN",
+  databaseURL: "DATABASE_URL",
+  projectId: "PROJECT_ID",
+  storageBucket: "STORAGE_BUCKET",
+  messagingSenderId: "MESSAGING_SENDER_ID",
+  appId: "APP_ID"
+});
+
+firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then(function(user) {
+    console.log("User created successfully: ", user);
+  })
+  .catch(function(error) {
+    console.error("Error creating user: ", error);
+  });
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(function(user) {
+    console.log("User signed in successfully: ", user);
+  })
+  .catch(function(error) {
+    console.error("Error signing in user: ", error);
+  });
 
 
 

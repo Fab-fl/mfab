@@ -10,10 +10,18 @@
   <body>
     <header class="header"></header>
 
-    <form class="color-picker-group">
-        <input type="color" id="color-picker" name="color">
-        <button id="color-picker-btn"type="button" onclick="changeColor()">Change color</button>
+    <form class="color-picker-group"> 
+      <div id="color-picker-btn">
+        <input type="color" id="color-picker" name="color" value="#ff00dd">
+        <div id="plate">change color</div>
+      </div> 
     </form>
+
+    <form>
+      <input type="checkbox" id="nofap" onchange="saveCheckbox()">I have been strong<br>
+    </form> 
+
+
 
   </body>
   

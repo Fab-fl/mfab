@@ -1,0 +1,74 @@
+:root{
+    --main-color: #23242a;
+    --background-color-brighter:#2f3136;
+    --background-color-bright:#3f4044;
+    --background-color-darker:#242425;
+    --dark-accent-color: rgb(26, 25, 25);;
+    --accent-color: #ff00dd;
+    --bright-accent-color: lighten(var(--accent-color), 50%);
+    --text-color: #424244;
+  }
+  
+  body{
+      background-color: #23242a;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap; 
+  }
+  
+  @font-face {
+          font-family: 'teko';
+          src: url(fonts/Teko/Teko-Regular.ttf) format('woff2');
+  }
+  
+  .header{
+      width:60%;
+      height:8%;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .registerform{
+      width:60%;
+      height:8%;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-family: 'teko', sans-serif;
+  }
+  
+  #usernamelabel, #emailabel, #passwordlabel {
+      margin-right: 10px;
+      color: var(--text-color);
+      font-size: 20px;
+  }
+  
+  #username, #email, #password {
+      background-color: var(--background-color-bright);
+      color: var(--text-color);
+      border-radius: 5px;
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 16px;
+      border: none;
+      width: 80%;
+  }
+  
+  button[name='submit'] {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 20%;
+  }
+  

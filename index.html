@@ -6,12 +6,27 @@
     <link rel="stylesheet" href="homestyle.css">
     <script src="https://kit.fontawesome.com/da7115a713.js" crossorigin="anonymous"></script>
     <script src="homescript.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAIHoRktdnI7eP-u-kMKCK_B9OxoSUn1MA",
+        authDomain: "mfabtk.firebaseapp.com",
+        projectId: "mfabtk",
+        storageBucket: "mfabtk.appspot.com",
+        messagingSenderId: "749927009711",
+        appId: "1:749927009711:web:f42471b86d1be2a10bf35a",
+        measurementId: "G-56EJW286QZ"
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
    
   <body>
 
     <header class="header">
-      <img src="images/header.jpeg">
+      <img src="images/header.png">
     </header>
 
     <div class="loginform">
@@ -37,9 +52,10 @@
       
     </form>
 
-    <audio controls src="audio/Juice-WRLD-All-Girls-Are-The-Same-(HipHopKit.com).mp3">
+    <audio controls src="audio/uzinick09.12.22.wav">
       Your browser does not support the audio element.
     </audio>
+    <!--<a href="registration.html">Don't have an account yet? Register here.</a>-->
 
     
   </body>

@@ -23,7 +23,7 @@ body{
 
 .header{
     width:60%;
-    height:8%;
+    height:5%;
     justify-content: center;
     margin-bottom: 10px;
     position: relative;
@@ -204,7 +204,7 @@ body{
     width: 40px;
     height:600%;
     background: var(--accent-color);
-    opacity: 50%;
+
     animation: rotatingcolorstrip 10s linear infinite;
   }
 

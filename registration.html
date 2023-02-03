@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>☆MFab☆ - Register</title>
+    <link rel="stylesheet" href="registration.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="https://kit.fontawesome.com/da7115a713.js" crossorigin="anonymous"></script>
+    <script src="homescript.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { auth } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAIHoRktdnI7eP-u-kMKCK_B9OxoSUn1MA",
+        authDomain: "mfabtk.firebaseapp.com",
+        projectId: "mfabtk",
+        storageBucket: "mfabtk.appspot.com",
+        messagingSenderId: "749927009711",
+        appId: "1:749927009711:web:f42471b86d1be2a10bf35a",
+        measurementId: "G-56EJW286QZ"
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = auth(app);
+    </script>
+  </head>
+   
+  <body>
+
+    <header class="header">
+      <img src="images/header.jpeg">
+    </header>
+
+    <div class="registerform">
+      <label for="username" id="usernamelabel">
+        <i id="label-icon" class="fa-solid fa-user fa-2xl"></i>
+      </label>
+      <input type="text" placeholder="name" name="username" id="username">
+      <label for="email" id="emailabel">
+        <i id="label-icon" class="fa-solid fa-envelope fa-2xl"></i>
+      </label>
+      <input type="email" placeholder="email" name="email" id="email">
+      <label for="password" id="passwordlabel">
+        <i id="label-icon" class="fa-solid fa-lock fa-2xl"></i>
+      </label>
+      <input type="password" placeholder="password" name="password" id="password">
+      <button name="submit" onclick="register()">Register</i></button>
+    </div>
+
+  </body>
+  
+</html>
